@@ -45,9 +45,7 @@
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var bounds_group = new L.featureGroup([]);
-        function setBounds() {
-            map.setMaxBounds(map.getBounds());
-        }
+
         function pop_Contributions_0(feature, layer) {
             layer.on({
                 mouseout: function(e) {
